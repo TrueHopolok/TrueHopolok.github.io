@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-coloumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    position: fixed;
+    z-index: 999;
+    background: maroon;
+    color: white;
+    width: 100%;
+}
+
+#header {
+    top: 0;
+}
+
+#footer {
+    bottom: 0;
+}
+
+@media (min-width: 900px) or (min-height: 900px) {
+    .section {
+        height: 160px;
+    }
+    .section * {
+        font-size: 14px;
+    }
+    .section-heading {
+        font-size: 30px;
+    }
+    .filter-button {
+        margin: 10px;
+        padding: 5px;
+    }
+    #header-container {
+        margin: 10px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 900px) or (max-height: 900px) {
+    .section {
+        height: 100px;
+    }
+    .section * {
+        font-size: 10px;
+    }
+    .section-heading {
+        font-size: 20px;
+    }
+    .filter-button {
+        margin: 5px;
+        padding: 2px;
+    }
+    #header-container {
+        margin: 5px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 600px) or (max-height: 600px) {
+    .section {
+        height: 40px;
+    }
+    .section * {
+        font-size: 5px;
+    }
+    .section-heading {
+        font-size: 10px;
+    }
+    .filter-button {
+        margin: 1px;
+        padding: 0px;
+    }
+    #header-container {
+        margin: 0px;
+        gap: 1px;
+    }
+}
+
+@media print {
+    #header, #footer {
+        display: none;
+    }
+}
