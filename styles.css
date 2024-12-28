@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+button {
+    border: outset 1px;
+}
+
 main {
     flex: 1;
 }
@@ -167,18 +171,18 @@ form {
         font-size: 12px;
     }
     .filter-button {
-        margin: 1px;
-        padding: 0px;
+        margin: 5px;
+        padding: 2px;
     }
     #header-container {
-        margin: 0px;
-        gap: 1px;
+        margin: 5px;
+        gap: 2px;
     }
 }
 
 @media (min-width: 1440px) or (min-height: 810px) {
     * {
-        font-size: 10px;
+        font-size: 12px;
     }
     .section {
         height: 100px;
@@ -187,32 +191,32 @@ form {
         font-size: 20px;
     }
     .filter-button {
-        margin: 1px;
-        padding: 0px;
+        margin: 8px;
+        padding: 4px;
     }
     #header-container {
-        margin: 0px;
-        gap: 1px;
+        margin: 8px;
+        gap: 4px;
     }
 }
 
 @media (min-width: 1792px) or (min-height: 1008px) {
     * {
-        font-size: 14px;
+        font-size: 16px;
     }
     .section {
-        height: 100px;
+        height: 120px;
     }
     .section-heading {
         font-size: 30px;
     }
     .filter-button {
-        margin: 1px;
-        padding: 0px;
+        margin: 10px;
+        padding: 5px;
     }
     #header-container {
-        margin: 0px;
-        gap: 1px;
+        margin: 10px;
+        gap: 5px;
     }
 }
 
@@ -221,18 +225,18 @@ form {
         font-size: 30px;
     }
     .section {
-        height: 150px;
+        height: 180px;
     }
     .section-heading {
         font-size: 50px;
     }
     .filter-button {
-        margin: 1px;
-        padding: 0px;
+        margin: 10px;
+        padding: 5px;
     }
     #header-container {
-        margin: 0px;
-        gap: 1px;
+        margin: 10px;
+        gap: 5px;
     }
 }
 

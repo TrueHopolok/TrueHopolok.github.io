@@ -1,3 +1,32 @@
+<!--
+
+TO FILL:
+  cards-container
+    card === example of a card
+  add-category
+    categories of the cards
+  filter-categories
+    categories of the cards 
+
+INPUTS:
+  add-
+    name
+    info
+    img
+    category
+    submit
+  search-
+    input
+    submit
+  filter-
+    select
+    apply
+    remove
+  checkbox-
+    ... name of the filter ...
+    
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,21 +82,23 @@
           <form>
             <br>
             <label>Name:</label>
-            <input class="add-input" id="add-name" type="text" placeholder="Name of the tip...">
+            <input id="add-name" class="add-input" type="text" placeholder="Name of the tip...">
             <br>
             <br>
             <label>Text:</label>
-            <input class="add-input" id="add-info" type="text" placeholder="The text of the tip itself...">
+            <input id="add-info" class="add-input" type="text" placeholder="The text of the tip itself...">
             <br>
             <br>
             <label>Image:</label>
-            <input class="add-input" id="add-img" type="text" placeholder="The link for the tip's image...">
+            <input id="add-img" class="add-input" type="text" placeholder="The link for the tip's image...">
             <br>
             <br>
             <label>Category:</label>
             <select id="add-category">
               <option value="">--select--</option>
-              <option value="zombies">Zombies</option>
+              <!-- <option value="zombies">Zombies</option>
+              <option value="skills">Skills</option>
+              <option value="events">Events</option> -->
             </select>
             <br>
             <br>
@@ -99,8 +130,8 @@
         </div>
       </div>
       <div class="gap-left container-coloumn">
-        <ul>
-          <li>
+        <ul id="filter-categories">
+          <!-- <li>
             <input type="checkbox" name="zombies" id="checkbox-zombies" checked>
             <label for="zombies">Zombies</label>
           </li>
@@ -111,7 +142,7 @@
           <li>
             <input type="checkbox" name="zombies" id="checkbox-events" checked>
             <label for="events">Events</label>
-          </li>
+          </li> -->
         </ul>
       </div>
     </footer>
