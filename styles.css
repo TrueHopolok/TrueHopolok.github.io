@@ -84,6 +84,16 @@ ul {
     width: 100%;
 }
 
+#add-tip {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#add-info {
+    height: 50px;
+}
+
 @media (min-width: 1600px) or (min-height: 900px) {
     * {
         font-size: 16px;
