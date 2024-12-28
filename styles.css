@@ -18,6 +18,12 @@ h1, h2, h3 {
     text-align: center;
 }
 
+form > label {
+    display: inline-block;
+    width: 7%;
+    text-align: right;
+}
+
 ul {
     align-items: center;
     justify-content: center;
@@ -59,6 +65,10 @@ ul {
     bottom: 0;
 }
 
+#footer > div > ul {
+    background-color: maroon;
+}
+
 .card {
     width: 80%;
     margin-left: auto;
@@ -80,8 +90,14 @@ ul {
     object-fit: fill;
 }
 
+form {
+    border: solid 1px black; 
+    padding: 2px;
+    align-items: center;
+}
+
 .add-input {
-    width: 100%;
+    width: 90%;
 }
 
 #add-tip {
@@ -91,50 +107,36 @@ ul {
 }
 
 #add-info {
+    justify-self: top;
     height: 50px;
 }
 
-@media (min-width: 1600px) or (min-height: 900px) {
+#add-submit {
+    width: 60%;
+    margin-left: 20%;
+}
+
+@media (max-width: 768px) or (max-height: 432px) {
     * {
-        font-size: 16px;
+        font-size: 3px;
     }
     .section {
-        height: 160px;
+        height: 20px;
     }
     .section-heading {
-        font-size: 30px;
+        font-size: 5px;
     }
     .filter-button {
-        margin: 10px;
-        padding: 5px;
+        margin: 1px;
+        padding: 0px;
     }
     #header-container {
-        margin: 10px;
-        gap: 10px;
+        margin: 0px;
+        gap: 1px;
     }
 }
 
-@media (max-width: 1600px) or (max-height: 900px) {
-    * {
-        font-size: 12px;
-    }
-    .section {
-        height: 100px;
-    }
-    .section-heading {
-        font-size: 20px;
-    }
-    .filter-button {
-        margin: 5px;
-        padding: 2px;
-    }
-    #header-container {
-        margin: 5px;
-        gap: 5px;
-    }
-}
-
-@media (max-width: 1024px) or (max-height: 576px) {
+@media (min-width: 768px) or (min-height: 432px) {
     * {
         font-size: 5px;
     }
@@ -154,8 +156,88 @@ ul {
     }
 }
 
+@media (min-width: 1024px) or (min-height: 576px) {
+    * {
+        font-size: 8px;
+    }
+    .section {
+        height: 60px;
+    }
+    .section-heading {
+        font-size: 12px;
+    }
+    .filter-button {
+        margin: 1px;
+        padding: 0px;
+    }
+    #header-container {
+        margin: 0px;
+        gap: 1px;
+    }
+}
+
+@media (min-width: 1440px) or (min-height: 810px) {
+    * {
+        font-size: 10px;
+    }
+    .section {
+        height: 100px;
+    }
+    .section-heading {
+        font-size: 20px;
+    }
+    .filter-button {
+        margin: 1px;
+        padding: 0px;
+    }
+    #header-container {
+        margin: 0px;
+        gap: 1px;
+    }
+}
+
+@media (min-width: 1792px) or (min-height: 1008px) {
+    * {
+        font-size: 14px;
+    }
+    .section {
+        height: 100px;
+    }
+    .section-heading {
+        font-size: 30px;
+    }
+    .filter-button {
+        margin: 1px;
+        padding: 0px;
+    }
+    #header-container {
+        margin: 0px;
+        gap: 1px;
+    }
+}
+
+@media (min-width: 2176px) or (min-height: 1152px) {
+    * {
+        font-size: 30px;
+    }
+    .section {
+        height: 150px;
+    }
+    .section-heading {
+        font-size: 50px;
+    }
+    .filter-button {
+        margin: 1px;
+        padding: 0px;
+    }
+    #header-container {
+        margin: 0px;
+        gap: 1px;
+    }
+}
+
 @media print {
-    #header, #footer {
+    #header, #footer, #add-tip {
         display: none;
     }
 }
