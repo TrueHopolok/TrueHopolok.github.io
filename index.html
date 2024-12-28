@@ -11,7 +11,7 @@
     <header id="header" class="section container-coloumn">
       <h1 class="section-heading">Project Zomboid Helper</h1>
       <div id="header-container" class="container-row">
-        <button id="add-tips">Add tips</button>
+        <button><a href="#add-tip">Add tips</a></button>
         <div class="container-row">
           <input id="search-input" type="text" name="search-by-name" placeholder="Search by name...">
           <button id="search-submit" class="">find</button>
@@ -20,23 +20,59 @@
       </div>
     </header>
     <main>
-      <div id="about-us">
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
-        <p>About us lol</p>
+      <br>
+      <div id="cards-container">
+        <div class="card">
+          <table>
+            <tr>
+              <th colspan="2">Example name</th>
+            </tr>
+            <tr>
+              <td>
+                <p>Informational text...</p>
+              </td>
+              <td>
+                <img alt="Example image">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Category: ...</p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
+      <br>
+      <hr>
+      <br>
+      <div id="add-tip">
+        <div class="card">
+          <h2>Add tip:</h2>
+          <form>
+            <input class="add-input" id="add-name" type="text" placeholder="Name of the tip...">
+            <input class="add-input" id="add-info" type="text" placeholder="The text of the tip itself...">
+            <input class="add-input" id="add-img" type="text" placeholder="The link for the tip's image...">
+            <select class="add-input" id="add-category">
+              <option value="">--select--</option>
+              <option value="zombies">Zombies</option>
+            </select>
+            <button class="add-input" id="add-submit">Submit a tip</button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <ul id="about-us" class="container-coloumn">
+        <li>
+          <p><a href="https://projectzomboid.com/blsog/">Project Zomboid</a> is an open world, survival game created by Indie Stone.</p>
+        </li>
+        <li>
+          <p>This web page created by <a href="https://github.com/TrueHopolok">Vadim</a> for players to collect tips and tricks for this game.</p>
+        </li>
+        <li>
+          <p>26.12.2024</p>
+        </li>
+      </ul>
     </main>
     <footer id="footer" class="section container-row">
       <div class="container-coloumn">
@@ -47,10 +83,22 @@
           <button id="filter-remove" class="filter-button">Remove all</button>
         </div>
       </div>
+      <div class="gap-left container-coloumn">
+        <ul>
+          <!-- <li>
+            <input type="checkbox" name="zombies" id="checkbox-zombies" checked>
+            <label for="zombies">Zombies</label>
+          </li>
+          <li>
+            <input type="checkbox" name="skills" id="checkbox-skills" checked>
+            <label for="skills">Skills</label>
+          </li>
+          <li>
+            <input type="checkbox" name="zombies" id="checkbox-events" checked>
+            <label for="events">Events</label>
+          </li> -->
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
-<!-- 
-LISTS
-TABLES
--->

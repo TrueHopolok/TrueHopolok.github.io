@@ -3,8 +3,25 @@
     padding: 0;
 }
 
+body { 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 h1, h2, h3 {
     text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
 }
 
 .container-row {
@@ -22,11 +39,16 @@ h1, h2, h3 {
 }
 
 .section {
-    position: fixed;
+    position: sticky;
     z-index: 999;
     background: maroon;
     color: white;
     width: 100%;
+}
+
+.gap-left {
+    margin: 2%;
+    align-items: left;
 }
 
 #header {
@@ -37,12 +59,37 @@ h1, h2, h3 {
     bottom: 0;
 }
 
-@media (min-width: 900px) or (min-height: 900px) {
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card > table, th, td {
+    width: 100%;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card > th, td {
+    width: 50%;
+}
+
+.card > td > img {
+    object-fit: fill;
+}
+
+.add-input {
+    width: 100%;
+}
+
+@media (min-width: 1600px) or (min-height: 900px) {
+    * {
+        font-size: 16px;
+    }
     .section {
         height: 160px;
-    }
-    .section * {
-        font-size: 14px;
     }
     .section-heading {
         font-size: 30px;
@@ -57,12 +104,12 @@ h1, h2, h3 {
     }
 }
 
-@media (max-width: 900px) or (max-height: 900px) {
+@media (max-width: 1600px) or (max-height: 900px) {
+    * {
+        font-size: 12px;
+    }
     .section {
         height: 100px;
-    }
-    .section * {
-        font-size: 10px;
     }
     .section-heading {
         font-size: 20px;
@@ -77,12 +124,12 @@ h1, h2, h3 {
     }
 }
 
-@media (max-width: 600px) or (max-height: 600px) {
+@media (max-width: 1024px) or (max-height: 576px) {
+    * {
+        font-size: 5px;
+    }
     .section {
         height: 40px;
-    }
-    .section * {
-        font-size: 5px;
     }
     .section-heading {
         font-size: 10px;
