@@ -22,12 +22,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-form > label {
-    display: inline-block;
-    width: 7%;
-    text-align: right;
-}
-
 ul {
     align-items: center;
     justify-content: center;
@@ -112,12 +106,18 @@ form {
 
 #add-info {
     justify-self: top;
-    height: 50px;
+    height: 80px;
 }
 
 #add-submit {
     width: 60%;
     margin-left: 20%;
+}
+
+#add-tip div.conatiner-row {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media (max-width: 768px) or (max-height: 432px) {
