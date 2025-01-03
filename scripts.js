@@ -59,16 +59,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         error_label.text("INFO: page updated properly");
         cards_container.empty();
         cards_info.forEach(card => {
-            if (
-                filter_checkboxes[card["category"]].prop("checked")
-            &&  (
-                    (!search_clicked) 
-                ||  card["name"].toLowerCase().includes(search_input.prop("value").toLowerCase())
-                )
-            ) {
-                let element = create_card_element(card);
-                cards_container.append(element, $("<br>"));
+            let is_any_filter_applied = false; 
+            Object.values(filter_checkboxes).forEach(element => {
+                is_any_filter_applied |= element.prop("checked");
+            });
+            if (is_any_filter_applied && !(filter_checkboxes[card["category"]].prop("checked"))) {
+                    return;
             }
+            if (search_clicked && !(card["name"].toLowerCase().includes(search_input.prop("value").toLowerCase()) )) {
+                return;
+            }
+            let element = create_card_element(card);
+            cards_container.append(element, $("<br>"));
         });
     }
 
