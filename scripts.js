@@ -1,25 +1,28 @@
+import data from './cards_existing.json' with {type: "json"};
+
 document.addEventListener("DOMContentLoaded", (event) => {
-    const add_name = document.getElementById("add-name");
-    const add_info = document.getElementById("add-info");
-    const add_img = document.getElementById("add-img");
-    const add_category = document.getElementById("add-category");
-    const add_submit = document.getElementById("add-submit");
+    const add_name = $("#add-name");
+    const add_info = $("#add-info");
+    const add_img = $("#add-img");
+    const add_category = $("#add-category");
+    const add_submit = $("#add-submit");
 
-    const search_input = document.getElementById("search-input");
-    const search_submit = document.getElementById("search-submit");
+    const search_input = $("#search-input");
+    const search_submit = $("#search-submit");
 
-    const filter_select = document.getElementById("filter-select");
-    const filter_remove = document.getElementById("filter-remove");
-    const filter_submit = document.getElementById("filter-submit");
-    const filter_container = document.getElementById("filter-conatiner");
+    const filter_select = $("#filter-select");
+    const filter_remove = $("#filter-remove");
+    const filter_submit = $("filter-submit");
+    const filter_container = $("#filter-conatiner");
     const filter_checkboxes = {
-        "zombies" : document.getElementById("checkbox-zombies"),
-        "skills" : document.getElementById("checkbox-skills"),
-        "events" : document.getElementById("checkbox-events")
+        "zombies" : $("#checkbox-zombies"),
+        "skills" : $("#checkbox-skills"),
+        "events" : $("#checkbox-events")
     };
 
-    const cards_container = document.getElementById("cards-container");
-
+    const cards_container = $("#cards-container");
+    // const cards_existing = JSON.parse(data);
+    console.log(data);
 })
 
 
