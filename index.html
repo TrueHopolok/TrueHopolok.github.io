@@ -1,13 +1,5 @@
 <!--
 
-TO FILL:
-  cards-container
-    card === example of a card
-  add-category
-    categories of the cards
-  filter-categories
-    categories of the cards 
-
 INPUTS:
   add-
     name
@@ -20,10 +12,10 @@ INPUTS:
     submit
   filter-
     select
-    apply
+    submit
     remove
-  checkbox-
-    ... name of the filter ...
+    container-
+      ... name of the filter ...
     
 -->
 
@@ -104,9 +96,9 @@ INPUTS:
               <label>Category:</label>
               <select id="add-category">
                 <option value="">--select--</option>
-                <!-- <option value="zombies">Zombies</option>
+                <option value="zombies">Zombies</option>
                 <option value="skills">Skills</option>
-                <option value="events">Events</option> -->
+                <option value="events">Events</option>
               </select>
             </div>
             <br>
@@ -134,13 +126,13 @@ INPUTS:
         <h2 class="section-heading">Category selector</h2>
         <div class="container-row">
           <button id="filter-select" class="filter-button">Select all</button>
-          <button id="filter-apply" class="filter-button">Apply filters</button>
+          <button id="filter-submit" class="filter-button">Apply filters</button>
           <button id="filter-remove" class="filter-button">Remove all</button>
         </div>
       </div>
       <div class="gap-left container-coloumn">
-        <ul id="filter-categories">
-          <!-- <li>
+        <ul id="filter-conatiner">
+          <li>
             <input type="checkbox" name="zombies" id="checkbox-zombies" checked>
             <label for="zombies">Zombies</label>
           </li>
@@ -151,7 +143,7 @@ INPUTS:
           <li>
             <input type="checkbox" name="zombies" id="checkbox-events" checked>
             <label for="events">Events</label>
-          </li> -->
+          </li>
         </ul>
       </div>
     </footer>
