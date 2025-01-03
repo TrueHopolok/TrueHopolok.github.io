@@ -89,8 +89,10 @@ ul {
     width: 50%;
 }
 
-.card > td > img {
-    object-fit: fill;
+.card > table > tr > td > img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensures a square aspect ratio */
 }
 
 form {
