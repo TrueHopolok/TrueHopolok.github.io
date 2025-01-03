@@ -27,7 +27,7 @@ const cards_info = JSON.parse(json_data);
 document.addEventListener("DOMContentLoaded", (event) => {
     const error_label = $("#error-label");
 
-    const add_form = $("add-tip");
+    const add_form = $("add-form");
     const add_name = $("#add-name");
     const add_info = $("#add-info");
     const add_img = $("#add-img");
