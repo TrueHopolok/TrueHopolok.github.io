@@ -21,8 +21,8 @@ const json_data = `
 ]
 `; 
 
-const cards_container = $("#cards-container");
 const cards_info = JSON.parse(json_data);
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const error_label = $("#error-label");
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     const cards_container = $("#cards-container");
-    const cards_info = JSON.parse(json_data);
     
     update_cards_container();
     error_label.text("Welcome to the page!");
@@ -161,7 +160,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             "img" : add_img.prop("value"),
             "category": add_category.prop("value")
         });
-        console.log(cards_info);
         add_form.trigger("reset");
         update_cards_container();
         error_label.text("INFO: new tip was successefully added")
