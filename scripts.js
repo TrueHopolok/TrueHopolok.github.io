@@ -160,7 +160,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
             "img" : add_img.prop("value"),
             "category": add_category.prop("value")
         });
-        add_form.trigger("reset");
+        add_name.prop("value", "");
+        add_info.prop("value", "");
+        add_img.prop("value",  "");
+        add_category.prop("value", "");
         update_cards_container();
         error_label.text("INFO: new tip was successefully added")
     })
